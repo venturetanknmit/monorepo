@@ -1,0 +1,51 @@
+/* :root{
+    --primary: ##2493d3;
+} */
+
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa&family=Hammersmith+One&family=Josefin+Sans&family=Koulen&family=Neucha&family=Noto+Sans+JP:wght@300&family=Nova+Cut&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto+Mono&family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto:wght@300&family=Sen&family=Shadows+Into+Light&family=Teko:wght@300&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh !important;  
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cf{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.card{
+    background-color: rgb(36, 147, 211, 0.8);
+    margin:16px;
+    padding:16px;
+    z-index: 200;
+    border-radius: 4px;
+}
+
+.link{
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+}
+
+.logoImg{
+    height: 160px;
+}
+.txtWhite{
+    color: #fff !important;
+}
+.unset{
+    all: unset !important;
+}

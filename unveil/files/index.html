@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unveil - Venture tank</title>
+        
+        <link rel="stylesheet" href="./app.css">
+        <!-- <script src="./app.js"></script> -->
+
+</head>
+<body class="cf">
+    
+    <!-- Video background -->
+    <video autoplay muted loop id="myVideo">
+        <source src="./bg2.mp4" type="video/mp4">
+    </video>
+
+    <div class="cf"> 
+        <h1 class="txtWhite">NITTE MEENAKSHI INSTITUTE OF TECHNOLOGY</h1>
+        <h3 class="txtWhite">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h3>
+        <h4 class="txtWhite">PRESENTS</h4>
+        <img class="logoImg" src="./logo2.png" alt="">
+
+        <div class="card" > 
+            <!-- <a class="link" target="_blank" href="https://venturetanknmit.com">
+                UNVEIL THE WEBSITE 
+            </a> -->
+            <input  id="input" type="text" class="unset" placeholder="type to unveil the Website" value=""/>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+<script>
+
+    // inRef - is the reference to id input - input field
+    const inRef = document.getElementById("input")
+    // console.log(inRef.value)
+
+     //On hit enter, code - 
+    inRef.addEventListener('keyup', function (e) {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+
+            //Check if the value in the input is valid
+            if(inRef.value === "venturetanknmit.com"  || inRef.value === "venturetanknmit" ){
+            
+            //Change the url
+            location.href = "https://venturetanknmit.com"
+
+            }
+        }
+    })
+
+</script>
